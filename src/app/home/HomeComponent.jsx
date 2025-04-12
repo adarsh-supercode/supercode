@@ -3,7 +3,7 @@ import { WhiteInflateLogo } from "@/app/components/AnimationLOgo/WhiteInflateLog
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef, useState } from "react";
-// import BannerSection from "./components/BannerSection";
+import LogoBanner from "./components/LogoBanner";
 import DemoBannerSection from "./components/DemoBannerSection";
 import Visionary from "./components/Visionary";
 import { Canvas, useFrame } from "@react-three/fiber";

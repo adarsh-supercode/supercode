@@ -1,8 +1,8 @@
-.BannerSection {
+/* .BannerSection {
     height: 1162px;
     position: absolute;
     pointer-events: none;
-}
+} */
 .animationLogo {
     position: absolute !important;
    /* width: 90%  !important; */
@@ -46,9 +46,10 @@
 }
 @media(min-width:1440px) and (max-width:1720px) {
 
-    /* .animationLogoCanvas{
+    .animationLogoCanvas{
         top: 45% !important;
-    } */
+    }
+    
 }
 
 
@@ -57,9 +58,9 @@
         position: absolute !important;
        width: 90%;
     }
-    /* .animationLogoCanvas{
+    .animationLogoCanvas{
         top: 40%  !important;
-    } */
+    }
 }
 
 @media(max-width:768px) {
@@ -97,9 +98,29 @@
     }
 }
 .animationLogoCanvas{
-    background-color: var(--color-7);
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+
+.bannerWrap{
+    position: relative;
+}
+
+.BannerSection{
+    position: absolute;
+    top: 10%;
+    pointer-events: none;
+}
+
+.canvasContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+.canvasWrap{
+
 }
