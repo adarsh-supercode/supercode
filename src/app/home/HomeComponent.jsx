@@ -274,7 +274,8 @@ export default function HomeComponent({ data }) {
       >
         <div className={`${styles.sectionBanner}`} ref={sectionBannerRef}>
           {/* <BannerSection banner={banner} /> */}
-          <DemoBannerSection banner={banner} />
+          <LogoBanner banner={banner}/>
+          {/* <DemoBannerSection banner={banner} /> */}
         </div>
         <Visionary visionary={visionary} />
         <div className="container">
