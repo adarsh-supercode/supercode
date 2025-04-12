@@ -1,0 +1,36 @@
+.techStackSection{
+    padding-top: 190px;
+    position: relative;
+    z-index: 2;
+}
+.skillsWrap{
+    padding-top: 64px;
+    display: flex;
+    gap: 24px;
+}
+.skillsWrap::-webkit-scrollbar{
+    display: none;
+}
+.skillsContent{
+    background-color: #fff;
+    width: 410px;
+    flex: 0 0 auto;
+    height: auto;
+    
+}
+.skillsTitle{
+    padding: 40px 48px;
+    border-bottom: 1px solid #AEAEAE;;
+}
+.skillPoints{
+    padding: 40px 48px;
+}
+.skillPoints li{
+ list-style-type: none;
+}
+
+@media(max-width:768px){
+    .techStackSection{
+        padding-top: 110px;
+    }
+}

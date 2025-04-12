@@ -1,0 +1,232 @@
+.bannerContentWrap {
+    padding-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.InsightBannerHeading {
+    max-width: 600px;
+    width: 100%;
+}
+
+.InsightBannerHeading span {
+    font-style: italic;
+}
+
+.bannerContentWrap {
+    display: flex;
+}
+
+.InsightBannerDesc {
+    max-width: 625px;
+    width: 100%;
+}
+
+.formSec {
+    padding-top: 20px;
+}
+
+.insightInput {
+    padding: 13px 32px;
+    width: 300px;
+    background: transparent;
+    border: 1px solid;
+    cursor:none;
+}
+
+.insightForm {
+    padding: 56px 0 17px;
+    display: flex;
+    gap: 24px;
+}
+
+/* must read section */
+.mustReadSection {
+    padding-top: 136px;
+}
+
+.InsightMainWrap {
+    background-color: var(--color-21);
+
+}
+
+.tabBtn {
+    background-color: transparent !important;
+    color: black !important;
+    cursor: auto;
+    border-color: black !important;
+}
+
+.TabActive {
+    background-color: black !important;
+    color: rgb(255, 255, 255) !important;
+    cursor: auto;
+    border-color: black !important;
+}
+
+.featuredPostsTitle {
+    max-width: 350px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.categorybuttonWrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    gap: 8px;
+}
+
+.TabsWrap {
+    padding-top: 180px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.tabPosts {
+    padding: 40px 70px;
+    border-bottom: 1px solid;
+}
+
+.postsWrap {
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.postContentWrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.postContentImg {
+    display: flex;
+    gap: 24px;
+}
+
+.postContentImage {
+    max-width: 302px;
+    width: 100%;
+}
+
+.postContentTag {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.postContentTitle {
+    max-width: 561px;
+    width: 100%;
+}
+
+.postDescription {
+    max-width: 411px;
+    width: 100%;
+}
+
+.categoryNames {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 300px;
+    width: 100%;
+}
+
+.loadMoreWrap {
+    display: flex;
+    padding-top: 72px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.tabPosts:has(+ .tabPosts:hover) {
+    border-bottom: none;
+}
+.tabPosts:hover {
+    background-color: #9FFF9F;
+    border-bottom: none;
+}
+
+.mustReadSectionWrap {
+    position: relative;
+    z-index: 2;
+}
+
+.mustReadTitle {
+    padding-bottom: 76px;
+}
+
+@media(max-width:991px) {
+    .bannerContentWrap {
+        flex-direction: column;
+    }
+
+    .formSec {
+        padding-top: 34px;
+    }
+
+    .insightForm {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .insightInput {
+        width: 100%;
+    }
+
+    .mustReadSection {
+        padding-top: 90px;
+    }
+
+    .mustReadTitle {
+        padding-bottom: 40px;
+    }
+
+    .TabsWrap {
+        padding-top: 130px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .TabsWrap::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tabPosts {
+        padding: 40px 20px;
+    }
+
+    .postContentWrap {
+        flex-direction: column;
+    }
+
+    .postContentImg {
+        flex-direction: column;
+    }
+
+    .postContentImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .postContentTag {
+        gap: 12px;
+    }
+
+    .postContentTitle {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

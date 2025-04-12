@@ -1,0 +1,33 @@
+
+
+
+.ProjectsWrap {
+    padding: 60px 0 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+@media(max-width:1440px) {
+    .ProjectsWrap {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:991px) {
+    .ProjectsWrap {
+        grid-template-columns:1fr ;
+
+    }
+}
+@media(max-width:768px) {
+    .ProjectsWrap {
+       padding-top: 25px;
+    }
+}

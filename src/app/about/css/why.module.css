@@ -1,0 +1,103 @@
+.WhySectionContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.WhySectionHeading{
+    max-width: 411px;
+    width: 100%;
+}
+.expertCardWrap{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 60px 53px 100px;
+    background-color: var(--color-12);
+    border-radius: 14px;
+    position: relative;
+    z-index: 2;
+}
+.CardTitle{
+    max-width:350px;
+    width: 100%;
+}
+.CardDesc{
+    max-width: 347px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+}
+.secondCardsSection{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 24px 0 160px;
+}
+.secondFirstCard{
+    background-color: var(--color-13);
+    display: flex;
+    padding: 64px 40px;
+    border-radius: 14px;
+    position: relative;
+    z-index: 2;
+}
+.firstCardDesc{
+    max-width: 990px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.secondSecCard{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--color-14);
+    padding: 64px 40px;
+    border-radius: 14px;
+    position: relative;
+    z-index: 2;
+}
+.secondCardDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media(max-width:1100px){
+.expertCardWrap{
+    flex-direction: column;
+}
+.secondFirstCard{
+    flex-direction: column;
+    gap: 30px;
+}
+}
+
+
+@media(max-width:768px){
+    .WhySectionContainer{
+        flex-direction: column;
+    }
+    .expertCardWrap{
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 40px;
+    }
+    .secondCardsSection{
+        flex-direction: column;
+        padding: 24px 0 0;
+    }
+    .secondFirstCard{
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .secondFirstCard{
+        gap: 40px;
+    }
+    .secondSecCard{
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,49 @@
+import React from "react";
+import Services from "./Services";
+import { generateSEO } from "@/utilites/helper";
+
+
+export async function generateMetadata() {
+  let data = await fetch(`${process.env.SERVER_PAGE_URL}1533?acf_format=standard`, {
+    next: { revalidate: 200 },
+  });
+  let pageData = await data.json();
+  let seoData = pageData?.yoast_head_json || null;
+  return generateSEO({
+    seo: seoData,
+    defaultSEO: {
+      title: "services",
+      description:
+        "Supercode design website",},
+    // mySEO: {
+    //   verification: {
+    //     google: "pFosOmh9sSrW01r3Ah_E33P8U82t07Zc-dmngdVexj4",
+    //   },
+    // },
+  });
+}
+
+
+
+export default async function page() {
+  try {
+    const response = await fetch(
+      `${process.env.SERVER_PAGE_URL}1533?acf_format=standard`,
+      {
+        next: { revalidate: 60 },
+      }
+    ).then((res) => res.json());
+    if (response) {
+      let pageData = response.acf;
+      return (
+        <>
+          <Services pageData={pageData} />
+        </>
+      );
+    } else {
+      return <div>Page not found</div>;
+    }
+  } catch (error) {
+    console.log("error: ", error);
+  }
+}

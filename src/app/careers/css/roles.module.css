@@ -1,0 +1,28 @@
+.roleSection{
+    padding-top: 150px;
+    position: relative;
+    z-index: 2;
+   
+}
+.accordonItem{
+    padding-top: 60px;
+}
+.resumeLink{
+    padding: 40px 0 ;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.75);
+}
+.resumeLink a{
+    text-decoration: underline;
+}
+.dropResumeLink{
+    padding: 40px 0 40px;
+}
+.dropResumeLink a{
+    text-decoration: underline;
+}
+
+@media(max-width:768px){
+    .accordonItem{
+        padding-top: 0;
+    }
+}

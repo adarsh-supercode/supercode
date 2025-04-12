@@ -1,0 +1,46 @@
+.BannerSectionWrap {
+    padding-top: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.BannerSectionContainer {
+    background-color: var(--color-4);
+}
+
+.BannerSectionHeading {
+    max-width: 750px;
+    width: 100%;
+}
+
+.BannerSectionHeading span {
+    font-style: italic;
+}
+
+.BannerSectionImg {
+    padding-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.BannerSectiondesc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 845px;
+    width: 100%;
+}
+
+.BannerdescWrap {
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media(max-width:768px) {
+    .BannerSectionWrap {
+        padding-top: 120px;
+    }
+}

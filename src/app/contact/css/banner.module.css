@@ -1,0 +1,39 @@
+.BannerSection{
+    padding-top: 170px;
+}
+.MarqueeLogo{
+    padding: 0  65px;
+   
+}
+.MarqueeLogo svg{
+    display: inline-block;
+    animation: rotate 5s linear infinite;
+    transform-origin: center;
+    margin-top: 20px;
+}
+.MarqueeText{
+    color: var(--color-18);
+    display: flex;
+    align-items: center;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @media(max-width:768px){
+
+    .BannerSection{
+      padding-top: 128px;
+  }
+
+    .MarqueeLogo svg{
+      margin-top: 0;
+      width: 70px;
+    }
+  }

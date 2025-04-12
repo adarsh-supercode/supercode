@@ -1,0 +1,158 @@
+.faqAccordionSection{
+    padding-top: 180px;
+    position: relative;
+    z-index: 2;
+}
+.faqaccordion{
+    padding-top: 127px;
+}
+.AccordionQustn{
+    width: 100%;
+    text-align: left;
+}
+.faqaccordionItemWrap{
+    border-bottom: 1px solid;
+}
+.accordion {
+    margin-top: 1rem;
+  }
+  
+  .item {
+    border-bottom: 1px solid #808080;
+  }
+  .accordion.accordionItemWrap.item :last-child{
+    border-bottom: none;
+  }
+  .itemBtn {
+    /* cursor: pointer; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 1rem;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    gap: 35px;
+  }
+  
+  
+  .itemBtnExpanded {
+    background-color: #e7e7e7;
+  }
+  
+  .itemContent {
+    transition: height 0.50s cubic-bezier(0, 0, 0, 1);
+  }
+  
+  .itemPanel {
+    padding: 1rem;
+  }
+  
+  .chevron {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .chevron1 {
+    position: absolute;
+    display: flex;
+    width: 18px;
+    height: 2px;
+    background: #000;
+  }
+  .chevron2 {
+    position: absolute;
+    display: flex;
+    width: 18px;
+    height: 2px;
+    transform: rotate(90deg);
+    background: #000;
+  }
+  .itemBtnExpanded .chevron2 {
+    height: 0px;
+  }
+  
+  .itemBtnExpanded .chevron {
+    transform: rotate(180deg);
+  }
+  .answerSec{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-bottom: 20px;
+  }
+  .answerSec p {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .answerSec ol {
+    padding-left: 30px;
+
+  }
+  .answerSec ol li {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .faqBtnSection{
+    padding-top: 100px;
+    display: flex;
+    gap: 50px;
+  }
+  .talktext{
+    text-decoration: underline;
+  }
+  .accordionbgBlk{
+    background-color: #000;
+    color: white;
+  }
+  .textWhite{
+    color: #fff;
+  }
+  .AccordiondesignBtn{
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    transition: color .5s cubic-bezier(0,0,0,1), border .5s cubic-bezier(0,0,0,1);
+  }
+  .AccordiondesignBtn:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+    transition: color .5s cubic-bezier(0,0,0,1), background-color .5s cubic-bezier(0,0,0,1);
+  }
+  .AccordiondevBtn{
+    color: #000!important;
+    border: 1px solid #000 !important;
+    background: transparent!important;
+    transition: color .5s cubic-bezier(0,0,0,1), border .5s cubic-bezier(0,0,0,1);
+  }
+  .AccordiondevBtn:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    transition: color .5s cubic-bezier(0,0,0,1), background-color .5s cubic-bezier(0,0,0,1);
+  }
+
+
+  @media(max-width:768px){
+    .faqAccordionSection{
+      padding-top: 50px;
+    }
+    .faqaccordion{
+      padding-top: 20px;
+    }
+    .answerSec ol {
+      padding-left: 15px;
+    }
+    .faqBtnSection {
+      flex-direction: column;
+      padding-top: 77px;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }

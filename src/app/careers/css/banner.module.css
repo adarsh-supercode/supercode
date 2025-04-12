@@ -1,0 +1,64 @@
+.careersBanner {
+    padding: 160px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.BannerSection {
+    max-width: 905px;
+    width: 100%;
+
+}
+
+.BannerSection span {
+    font-style: italic;
+}
+
+.BannerSectionDesc {
+    max-width: 628px;
+    width: 100%;
+}
+
+.BannerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.BannerSectionAbout {
+    max-width: 519px;
+    width: 100%;
+}
+
+.descriptionWrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+
+@media(max-width:1024px) {
+    .descriptionWrap {
+        flex-direction: column;
+        gap: 42px;
+    }
+}
+
+@media(max-width:768px) {
+    .careersBanner {
+        padding: 120px 0;
+    }
+
+    .descriptionWrap {
+        flex-direction: column;
+        gap: 42px;
+    }
+}

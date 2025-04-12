@@ -1,0 +1,82 @@
+.LookforSection{
+    position: relative;
+    z-index: 2;
+}
+.careerSwiper{
+    height: 500px;
+}
+.lookforPointSection{
+    width: 100%;
+    display: flex;
+}
+.lookforPointitle{
+    width: 50%;
+}
+.lookforPoints{
+    width: 50%;
+}
+
+.swiperContainer {
+    position: relative;
+   
+}
+
+.customSwiper {
+    padding-bottom: 20px;
+}
+.navigationArrows{
+    padding-top: 100px;
+}
+
+.progressBarWrapper {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(128, 128, 128, 0.75);
+}
+
+
+.progressBar {
+    height: 100%;
+    background-color: #ffffff; 
+    transition: width 0.3s ease; 
+}
+.pointDesc{
+    max-width: 736px;
+    width: 100%;
+}
+.pointSlidertext{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lookforPointSection{
+    padding-top: 200px;
+}
+.navigationArrows {
+    display:  flex;
+    gap: 100px;
+    padding-top: 100px;
+}
+.navigationArrows button{
+background-color: transparent;
+border: none;
+}
+
+@media(max-width:768px){
+    .careerSwiper{
+        height: auto;
+    }
+    .lookforPointSection{
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    .lookforPoints{
+        width: 100%;
+    }
+}

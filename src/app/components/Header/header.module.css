@@ -1,0 +1,139 @@
+.NavWrap {
+    padding: 25px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10 ;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.NavItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavWrapLinkBtn {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.NavWrapLink {
+    display: flex;
+    gap: 40px;
+}
+
+.visible {
+    transform: translateY(0);
+    background-color: #ffffff80;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+.atTop {
+    background-color: transparent;
+}
+
+.notAtTop {
+    background-color: #ffffff80;
+    backdrop-filter: blur(12px);
+    z-index: 10;
+}
+.linkContainer {
+    display: inline-block;
+    overflow: hidden; /* Ensures elements outside the container are hidden */
+    position: relative;
+    height: 1.5em; /* Adjust based on the font size or link height */
+}
+
+.link {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the link spans the full width */
+    transition: transform 0.4s ease; /* Smooth transition for the movement */
+}
+
+.link:hover {
+    transform: translateY(-100%); /* Moves the top link out of view */
+}
+
+.link::after {
+    content: attr(data-text); /* Creates a copy of the link text */
+    position: absolute;
+    top: 100%; /* Start just below the link */
+    left: 0;
+    width: 100%;
+    font-size: inherit; /* Match the parent font size */
+    color: inherit; /* Match the parent text color */
+    line-height: inherit; /* Match the parent line height */
+    text-align: center; /* Optional: Center align the text */
+    transform: translateY(0); /* Initial position */
+    transition: transform 0.4s ease; /* Smooth transition for the replacement */
+}
+.link::after:hover{
+    transform: translateY(0);
+}
+/*-------mobile header--------*/
+.dropdown{
+    display: none;
+}
+@media(max-width:1024px ){
+    .navLogo svg{
+        width: 200px;
+      }
+      .NavWrapLinkBtn{
+        gap: 20px;
+      }
+      .NavWrapLink{
+        gap: 20px;
+      }
+}
+  @media (max-width:768px){
+    .NavWrapLink{
+        display: none;
+    }
+   
+    .dropdown {
+        position: relative;
+        display: block;
+      }
+      .NavbtnWrap{
+        display: none;
+      }
+      .dropdownToggle {
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 8px 16px;
+      }
+      
+      .dropdownMenu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        border-radius: 4px;
+        padding: 8px 0;
+        min-width: 150px;
+      }
+      
+      .dropdownItem {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        transition: background 0.3s;
+      }
+      
+      .dropdownItem:hover {
+        background: #f0f0f0;
+      }
+  }

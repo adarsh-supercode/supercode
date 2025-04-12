@@ -1,0 +1,414 @@
+.footerContainer {
+
+    position: relative;
+    overflow: hidden;
+    padding-top: 90px;
+}
+
+.blackLogo svg path {
+    fill: black
+}
+
+
+.footerWrapper {
+    padding: 100px 0 160px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+
+}
+
+.footerContentContainer {
+    position: relative;
+}
+
+.careersFooter {
+    padding-top: 0px !important;
+}
+
+.footerLinks {
+    list-style-type: none;
+    color: var(--color-10);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.footerLinks li {
+    overflow: hidden;
+    position: relative;
+    height: 1.5em;
+
+}
+
+.footerLinks li a {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ensure the link spans the full width */
+    transition: transform 0.4s ease;
+}
+
+.footerLinks li a:hover {
+    transform: translateY(-100%);
+    /* Moves the top link out of view */
+}
+
+.footerLinks li a::after {
+    content: attr(data-text);
+    /* Creates a copy of the link text */
+    position: absolute;
+    top: 100%;
+    /* Start just below the link */
+    left: 0;
+    width: 100%;
+    font-size: inherit;
+    /* Match the parent font size */
+    color: inherit;
+    /* Match the parent text color */
+    line-height: inherit;
+    /* Match the parent line height */
+    transform: translateY(0);
+    /* Initial position */
+    transition: transform 0.4s ease;
+    /* Smooth transition for the replacement */
+}
+
+.footerLinks li a::after:hover {
+    transform: translateY(0);
+}
+
+.footerPageLinks {
+    display: flex;
+    gap: 60px;
+}
+
+.tellusContent {
+    color: var(--color-4);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end;
+    /* justify-content: flex-end; */
+}
+
+.copyrightSection {
+    z-index: 2;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 36px 0;
+    color: var(--color-10);
+}
+
+.copyrightContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.termsPageLinks {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.FooterAnimationLogo {
+    /* position: absolute; */
+    bottom: -23rem;
+    width: 100%;
+}
+
+.FooterAnimation3d {
+    bottom: 0;
+    /* height: 763px; */
+}
+
+.FooterAnimation3d div {
+    display: flex;
+    justify-content: center;
+}
+
+.rotationControl {
+    position: fixed;
+    top: 200px;
+    z-index: 10;
+}
+
+.cameraControl {
+    position: fixed;
+    top: 200px;
+    z-index: 10;
+    right: 0;
+}
+
+.canvasWrap {
+    height: 100%;
+    position: absolute;
+    bottom: -3rem;
+    width: 90%;
+}
+
+.footerCanvas {
+    height: 100%;
+    position: absolute;
+    /* bottom: -8rem; */
+    width: 90%;
+    /* z-index: -1; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.blackText {
+    color: black !important;
+}
+
+.posRelative {
+    position: relative;
+    z-index: 10;
+}
+
+.whiteText {
+    color: white !important;
+}
+
+.blackBg {
+    background-color: black;
+    border: 1px solid black;
+    transition: background-color .5s cubic-bezier(0, 0, 0, 1), color .5s cubic-bezier(0, 0, 0, 1);
+
+}
+
+.blackBg:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: background-color .5s cubic-bezier(0, 0, 0, 1), color .5s cubic-bezier(0, 0, 0, 1);
+
+}
+
+.blackBg:hover:global(.textClrBlack) svg path {
+    stroke: black;
+}
+
+.whiteBg {
+    background-color: #fff;
+    border: 1px solid #fff;
+    transition: background-color .5s cubic-bezier(0, 0, 0, 1), color .5s cubic-bezier(0, 0, 0, 1);
+}
+
+.whiteBg:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: background-color .5s cubic-bezier(0, 0, 0, 1), color .5s cubic-bezier(0, 0, 0, 1);
+}
+
+.whiteBg:hover:global(.textClrBlack) svg path {
+    stroke: white;
+}
+
+.textClrAbout {
+    color: #70FF70;
+}
+
+.textClrHome {
+    color: #082BC6;
+}
+
+.textClrWork {
+    color: #FF70B8;
+}
+
+.textClrService {
+    color: #A0A0A0;
+}
+
+.textClrwebDev {
+    color: #fff
+}
+
+.contactPageClass {
+    display: none !important;
+}
+
+.footerLogoText {
+    display: flex;
+    gap: 153px;
+}
+
+.footerMediaLinks {
+    display: none;
+    gap: 28px;
+    list-style-type: none;
+    justify-content: center;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.homefooterLogo {
+    height: 1000px !important;
+    position: fixed !important;
+    bottom: 0px !important;
+    left: 0 !important;
+    z-index: -1 !important;
+   
+   
+}
+.homefooterLogo canvas{
+    opacity: 0;
+}
+
+.staticFooterLogo {
+    position: absolute !important;
+    bottom: -9rem !important;
+    height: 450px !important;
+    width: 90vw !important;
+    z-index: -1 !important;
+}
+
+.visible{
+    opacity: 1 !important;
+}
+@media (max-width: 2000px) {
+    .homefooterLogo{
+        margin-bottom: -40px;
+    }
+    .staticFooterLogo {
+        bottom: -11rem !important;
+    }
+
+}
+@media (max-width: 1440px) {
+    .staticFooterLogo {
+        bottom: -9rem !important;
+    }
+    .homefooterLogo{
+        /* margin-bottom: -25rem; */
+        margin-bottom: 0rem;
+    }
+
+}
+@media (max-width: 1200px) {
+    .footerLogoText {
+        gap: 120px;
+    }
+
+    .footerContent {
+        gap: 130px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footerLogoText {
+        gap: 90px;
+    }
+
+    .footerContent {
+        gap: 90px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footerLogoText {
+        gap: 80px;
+    }
+
+    .footerContent {
+        gap: 82px;
+    }
+    .homefooterLogo{
+        margin-bottom: -22rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .footerLogoText {
+        gap: 66px;
+    }
+
+    .footerContent {
+        gap: 70px;
+    }
+}
+
+@media(max-width:768px) {
+    .footerWrapper {
+        padding: 76px 0;
+    }
+
+    .FooterWrapperContact {
+        padding: 0;
+    }
+
+    .footerContent {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
+    .tellusContent {
+        padding: 0 0 110px 84px;
+        align-items: flex-start;
+    }
+
+    .footerLogoText {
+        gap: 44px;
+    }
+
+    .footerMediaLinks {
+        display: flex;
+        flex-direction: row !important;
+        gap: 60px;
+        justify-content: flex-start;
+        padding-left: 113px;
+    }
+
+    .termsPageLinks {
+        gap: 30px;
+    }
+
+    .copyrightContent {
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+}
+
+@media(max-width:475px) {
+    .footerMediaLinks {
+        gap: 60px;
+        justify-content: flex-start;
+        padding-left: 113px;
+    }
+       
+       .tellusContent {
+        padding: 0 0 110px 0px;
+        align-items: flex-start;
+    }
+    .homefooterLogo{
+        margin-bottom: -28rem;
+    }
+}
+
+@media(max-width:375px) {
+    .tellusContent {
+        padding: 0 0 110px 0px;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,18 @@
+.workBannerHeading {
+    max-width: 800px;
+    width: 100%;
+    padding-top: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.workBannerHeading span {
+    font-style: italic;
+}
+
+@media(max-width:768px) {
+    .workBannerHeading {
+        padding-top: 123px;
+    }
+}

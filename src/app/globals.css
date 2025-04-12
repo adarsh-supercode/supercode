@@ -1,0 +1,714 @@
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('/fonts/PPRightGrotesk-Light.woff2') format('woff2'),
+    url('/fonts/PPRightGrotesk-Light.woff') format('woff');
+  font-weight: 300;
+  /* Light weight */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('/fonts/PPRightGrotesk-Regular.woff2') format('woff2'),
+    url('/fonts/PPRightGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  /* Regular weight */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('/fonts/PPRightGrotesk-Medium.woff2') format('woff2'),
+    url('/fonts/PPRightGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  /* Medium weight */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('/fonts/PPRightGrotesk-Regular.woff2') format('woff2'),
+    url('/fonts/PPRightGrotesk-Regular.woff') format('woff');
+  font-weight: 700;
+  /* Bold weight */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('/fonts/PPRightGrotesk-CompactDark.woff') format('woff'),
+    url('/fonts/PPRightGrotesk-CompactDark.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('/fonts/PPRightGrotesk-CompactDark.woff') format('woff'),
+    url('/fonts/PPRightGrotesk-CompactDark.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* Add additional weights as necessary */
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --global-font: "PP Right Grotesk";
+
+  --color-2: #70FF70;
+  --color-3: #FFBE0B;
+  --color-4: #70FF70;
+  --color-5: #FFBFDF;
+  --color-6: #DFFFDF;
+  --color-7: #F8F5F5;
+  --color-8: #ECECEC;
+  --color-9: #000;
+  --color-10: #FFF;
+  --color-11: #072AC5;
+  --color-12: #D8DFFE;
+  --color-13: #FFDE85;
+  --color-14: #D6FFD6;
+  --color-15: #171717;
+  --color-16: #808080;
+  --color-17: #FF70B8;
+  --color-18: #0933EE;
+  --color-19: #FFD666;
+  --color-20: #80FF8080;
+  --color-21: #F5F5F5;
+}
+
+/* text selector color */
+
+
+::selection {
+  background-color: #00FF00;
+
+}
+
+/* white clr */
+.clr-wh {
+  color: var(--color-10);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  cursor:none;
+  background-color: var(--color-21);
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--global-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+/* Custom cursor styles */
+
+
+
+.cursorPlaybutton {
+  cursor: url('/assets/playbutton.png'), auto;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 9999;
+  background-color: #000;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%) scale(0.8);
+  transform-origin: center;
+  transition: transform 0.2s ease, background-image 0.5s ease, opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
+  opacity: 1;
+}
+
+.custom-cursor.white {
+  background-color: white;
+}
+
+.custom-cursor.hidden {
+  opacity: 0;
+}
+
+/* Example of section-specific cursors */
+.custom-cursor.arrow-upright {
+  border-radius: 0px;
+  width: 89px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('/assets/upright.png');
+
+}
+
+.custom-cursor.arrowRL {
+  border-radius: 0px;
+  width: 89px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('/assets/arrowRL.png');
+}
+
+.custom-cursor.ArrowgreenRL {
+  border-radius: 0px;
+  width: 89px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('/assets/ArrowgreenRL.png');
+
+}
+
+.custom-cursor.playbutton {
+  border-radius: 0px;
+  width: 89px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('/assets/playbutton.png');
+
+}
+
+.custom-cursor.pauseButton {
+  border-radius: 0px;
+  width: 89px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('/assets/pauseButton.png');
+
+}
+.custom-cursor.interactbtn {
+  border-radius: 0px;
+  width: 53px;
+  height: 48px;
+  background-color: transparent;
+  background-image: url('/assets/interactionicon.png');
+
+}
+.custom-cursor.grabbtn {
+  border-radius: 0px;
+  width: 53px;
+  height: 48px;
+  background-color: transparent;
+  background-image: url('/assets/Grab.png');
+
+}
+
+.custom-cursor.ArrowgreenTR {
+  border-radius: 0px;
+  width: 89px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('/assets/ArrowgreenTR.png');
+
+}
+
+.custom-cursor.rotationArrow {
+  border-radius: 0px;
+  width: 89px;
+  height: 80px;
+  background-color: transparent;
+  background-image: url('/assets/rotationArrow.png');
+
+}
+
+.custom-cursor.arrowWhite {
+  border-radius: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url('/assets/arrowWhite.png');
+}
+
+.posRelative {
+  position: relative;
+  z-index: 10;
+}
+
+.careersFooter {
+  padding-top: 0px !important;
+}
+
+.container {
+  max-width: 1780px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+
+/* heading */
+
+.heading-1-lt {
+  font-size: 137.08px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140px;
+  letter-spacing: -4px;
+}
+
+
+.heading-1 {
+  font-size: 137.08px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140px;
+  letter-spacing: -4px;
+}
+
+.heading-3,
+.innerHeading-3 h1 {
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 97px;
+  letter-spacing: -2px;
+}
+
+.heading-3-light {
+  font-size: 84.72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 95px;
+  letter-spacing: -3px;
+}
+
+.heading-4 {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+.heading-5-med {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62px;
+}
+.heading-6-md{
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.heading-7 {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+}
+
+
+/* text */
+.text-1 {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+
+.text-1-lg {
+  font-family: var(--global-font);
+  font-size: 8.5vw;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 95px;
+  letter-spacing: -2px;
+}
+
+.text-2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 40px;
+}
+
+.text-3-reg {
+  font-family: var(--global-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.text-4-med {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62px;
+}
+
+.text-4-reg {
+  font-family: var(--global-font);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.text-4-lg {
+  font-family: var(--global-font);
+  font-size: 32.36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+.wg-600 {
+  font-weight: 600;
+  ;
+}
+
+.wg-400 {
+  font-weight: 400;
+  ;
+}
+
+.wg-200 {
+  font-weight: 200;
+  ;
+}
+
+.text-5 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.lnht-20 {
+  line-height: 20px;
+}
+
+.lnht-36 {
+  line-height: 36px;
+}
+
+.text-3-sm {
+  font-family: var(--global-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100px;
+  /* 500% */
+}
+
+.text-3-lg {
+  font-family: var(--global-font);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 95px;
+  letter-spacing: -2px;
+}
+
+.text-6 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.text-6-med {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.64px;
+}
+
+.text-8-med {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+
+/* button text */
+.button-text1 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14.72px;
+  font-family: var(--global-font);
+}
+
+.button-text2 {
+  font-size: 12.36px;
+  font-weight: 400;
+  line-height: 62.5px;
+  font-size: 12px;
+}
+
+/* text-alignment */
+.tac {
+  text-align: center;
+}
+
+
+/* /text-clr-black/ */
+
+.textClrBlack {
+  color: black;
+}
+
+.caps {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tac {
+  text-align: center;
+}
+
+/* noisewrap */
+
+/* .noiseMainWrap {
+  position: relative;            
+  overflow: hidden;   
+  z-index: 2;          
+} */
+.splide__slide {
+  width: auto !important;
+  /* Let content determine the width */
+}
+
+/* .noiseMainWrap::before {
+  content: '';                    
+  position: absolute;              
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/RpdD.gif'); 
+  background-repeat: repeat;       
+  background-position: top left;   
+  opacity: 0.03;                   
+  z-index: 1;                
+} */
+.main-app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.main-app::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/RpdD.gif');
+  background-repeat: repeat;
+  background-position: top left;
+  opacity: 0.03;
+  z-index: 2;
+  height: 100vh;
+}
+
+@media(max-width:1440px) {
+  .container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+}
+
+/* accordion */
+.szh-accordion button {
+  width: 100%;
+  display: flex;
+  border: none;
+  background: transparent;
+}
+
+/* hitsection */
+.workHitwrap {
+  padding: 0 80px;
+}
+
+/* insightcard */
+
+
+.insightcardBox {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.insightcardBox img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-container {
+  height: auto !important;
+}
+
+/* canvas logo */
+
+/* @media (min-width: 1400px){
+  .container{
+    max-width: 1440px !important;
+    width: 90% !important;
+  }
+}
+@media (min-width: 1200px){
+  .container{
+    max-width: 1440px !important;
+    width: 90% !important;
+  }
+}
+@media (min-width: 768px){
+.container{
+  max-width: 1440px !important;
+}
+}
+@media (min-width: 576px){
+  .container{
+    max-width: 1440px !important;
+  }  
+} */
+
+@media (max-width:768px) {
+  .heading-1-lt {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+  }
+
+  .heading-1 {
+    font-size: 137.08px;
+    font-style: normal;
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: -1px;
+  }
+
+  .heading-3-light {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .heading-5-med {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 62px;
+  }
+
+  .heading-7 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  .text-1 {
+    letter-spacing: -1px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .text-2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30px;
+  }
+
+  .text-3-lg {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .heading-3 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: normal;
+  }
+
+  .text-4-med {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .text-3-reg {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .text-4-reg {
+    font-family: var(--global-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  /* ---------------Cursor-------------- */
+
+  .custom-cursor {
+    opacity: 0;
+  }
+
+  /* -----------insight card ------------ */
+  .insightcardBox {
+    gap: 70px;
+  }
+
+  /* -----------------work page-------------- */
+  .workHitwrap {
+    padding: 0;
+  }
+  body{
+    overflow:auto !important;
+  }
+}

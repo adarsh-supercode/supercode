@@ -1,0 +1,83 @@
+.AwardWinnersSection{
+    padding-top: 300px;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.awardwinnersWrap{
+    padding-top: 95px;
+    position: relative;
+
+}
+.awardContent{
+    display: flex;
+    align-items: center;
+    padding: 24px 80px;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.50); 
+    position: relative;
+    z-index: 2;
+}
+.awardDetails{
+    display: flex;
+width: 60%;
+    gap: 30px;
+}
+.year{
+color: rgba(255, 255, 255, 0.50);
+}
+.dkphideyear{
+    display: none;
+}
+.awardname{
+width: 520px;
+}
+.projectname {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.awardImage {
+    position: absolute;
+    top: 16%; 
+    right: 5%;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s cubic-bezier(0,0,0,1), transform 0.5s cubic-bezier(0,0,0,1);
+    pointer-events: none; 
+   
+}
+.awardContent:hover{
+    background-color: #FF0080;
+    transition: background-color .8s cubic-bezier(0,0,0,1);
+}
+.awardContent:hover + .awardImage {
+    transform: scale(1);
+    opacity: 1; 
+}
+
+@media(max-width:768px){
+    .AwardWinnersSection{
+        padding-top: 80px;
+    }
+    .awardwinnersWrap{
+        padding-top: 20px;
+    }
+    .year{
+        display: none;
+    }
+    .dkphideyear{
+        display: flex;
+    }
+    .awardContent{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 30px;
+        gap: 16px;
+    }
+    .awardDetails{
+        width: 100%;
+    }
+    .awardImage{
+        display: none;
+    }
+}

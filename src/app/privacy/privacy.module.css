@@ -1,0 +1,36 @@
+.ContentMainwrap{
+    display: flex;
+    justify-content: center;
+}
+.PrivacyWrap{
+    padding-top:160px ;
+    max-width: 1000px;
+    background-color: var(--color-21);
+}
+.privacyContentWrap{
+    padding-top: 100px;
+}
+.privacyContent p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+.privacyContent h2{
+    padding: 20px 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+@media(max-width:768px){
+    .PrivacyWrap{
+    padding: 120px 0px 0;
+    }
+    .privacyContentWrap{
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,40 @@
+.insightScoopSection{
+    position: relative;
+    z-index: 2;
+}
+
+.InsightHeader {
+    padding-top: 110px;
+    color: var(--color-10);
+}
+
+.InsightCardWrap {
+    display: flex;
+    gap :24px;
+    padding-top: 72px;
+    width: 100%;
+    justify-content: space-between;
+}
+.InsightCard{
+    flex: 28%;
+}
+.InsightCard:nth-child(2){
+    flex: 50%;
+}
+.InsightCard:nth-child(2) img{
+    height: 400px;
+}
+.insightBtn {
+    display: flex;
+    justify-content: center;
+    padding: 88px 0 30px;
+}
+
+@media(max-width:768px){
+    .InsightCardWrap{
+        flex-direction: column;
+    }
+    .InsightHeader{
+        padding: 0;
+       }
+}

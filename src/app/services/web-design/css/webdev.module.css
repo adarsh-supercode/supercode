@@ -1,0 +1,40 @@
+.WebdevSec{
+    background-color: black;
+    padding-top: 180px;
+    position: relative;
+    z-index: 2;
+}
+.marqueeLinkWrap{
+    padding-right: 70px;
+   
+}
+.MarqueeLInkHeading{
+    padding-bottom: 56px;
+    color: #fff;
+}
+.MarqueeLInkSection{
+    background-color: #101010;
+}
+.marqueeLink{
+display: flex;
+align-items: center;
+justify-content: center;
+gap :70px;
+padding: 45px 0;
+color: #fff;
+font-size: 137.08px;
+font-style: normal;
+font-weight: 200 !important;
+line-height: 80px; /* 58.36% */
+letter-spacing: -3px;
+text-transform: uppercase;
+}
+.webmarquee :global(.rfm-marquee){
+    min-width: none !important;
+}
+
+@media(max-width:768px){
+    .WebdevSec{
+    padding-top: 130px;
+    }
+}

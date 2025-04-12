@@ -1,0 +1,553 @@
+/* Primarybutton */
+.PrimaryButton {
+    display: inline-flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 56px;
+    cursor: none;
+    height: 48px;
+
+}
+.buttontextblk{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: background-color .5s cubic-bezier(0,0,0,1), color .5s cubic-bezier(0,0,0,1);
+
+}
+.buttontextblk:hover{
+    background-color: black ;
+    color: white ;
+    border: 1px solid black ;
+    transition: background-color .5s cubic-bezier(0,0,0,1), color .5s cubic-bezier(0,0,0,1);
+
+}
+.buttontextblk:hover .primarybtnSvg svg path {
+    stroke: white;
+}
+
+.buttonwhite {
+    background-color: transparent;
+    color: var(--color-10);
+    border: 1px solid var(--color-10);
+    transition: background-color .5s cubic-bezier(0,0,0,1), color .5s cubic-bezier(0,0,0,1);
+
+}
+
+.buttonwhite:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition: background-color .5s cubic-bezier(0,0,0,1), color .5s cubic-bezier(0,0,0,1);
+}
+.buttonwhite:hover .primarybtnSvg svg path {
+    stroke: white ;
+}
+
+.blackBg {
+    background-color: black ;
+    color: white;
+    border: 1px solid black;
+    transition: background-color .5s cubic-bezier(0,0,0,1), color .5s cubic-bezier(0,0,0,1);
+
+}
+.blackBg:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black ;
+    transition: background-color .5s cubic-bezier(0,0,0,1), color .5s cubic-bezier(0,0,0,1);
+
+}
+.blackBg:hover svg path{
+    stroke: black;
+}
+.blackBg .primarybtnSvg  svg path{
+    stroke:white;
+}
+.blackBg:hover .primarybtnSvg  svg path{
+    stroke:black;
+}
+
+.noBg{
+    background: transparent !important;
+    color: #000 !important;
+    border: 1px solid;
+}
+.noBg div svg path{
+    stroke: black !important;
+}
+.noBg:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.noBg:hover div svg path{
+    stroke: #fff !important;
+}
+
+.whiteBorder{
+    color: white;
+    background-color: transparent !important;
+    border: 1px solid white;
+}
+.whiteBorder:hover{
+    color: black;
+    background-color: white !important;
+    border: 1px solid white !important;
+}
+.secondaryButton {
+    display: inline-flex;
+    padding: 8px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    cursor: none;
+    color: black;
+    background-color: var(--color-10);
+    height: 24px;
+}
+
+/* cards */
+
+
+/* superhitcard */
+
+.SuperHitTitle {
+    max-width: 540px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.SuperHitcontentWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.SuperHitProject {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.SuperHitbtnWrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    width: 100%;
+    gap: 8px;
+}
+
+/* .SuperHitCard a{
+    cursor: url('/assets/know-more-arrow.png'), auto;
+} */
+
+.SuperHitCard:nth-child(even) {
+    margin-top: 60px;
+}
+/* Assuming these are your existing styles */
+.SuperHitCard {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* You can add your specific animation delay in your CSS */
+.SuperHitCard[data-delay="0.3s"] {
+    animation-delay: 0.3s;
+}
+
+.SuperHitCard[data-delay="0s"] {
+    animation-delay: 0s;
+}
+
+/* InsightCard */
+
+.InsightCard {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+.InsightCard{
+    flex: 30%;
+}
+.InsightCard img{
+    height: 280px;
+}
+.InsightCard:nth-child(2){
+    flex: 50%;
+}
+.InsightCard:nth-child(2) img{
+    height: 350px;
+}
+
+.InsightCardtextContent {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: var(--color-10);
+}
+.insightTagWrap{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+/* .InsightCardtextContentdesc{
+    max-width: 411px;
+    width: 100%;
+} */
+
+.SuperHitCard {
+    position: relative;
+    will-change: transform;
+    z-index: 2;
+  }
+  
+  .SuperHitcontentWrap {
+    position: relative;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .SuperHitTextContent {
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .SuperHitProject {
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .SuperHitbtnWrap {
+    transform: translateY(0);
+    transition: transform 0.2s ease-out;
+  }
+  .superhitImage{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* //slider// */
+  /* 1.marquee slider */
+
+  .SliderContentWrap {
+    border-radius: 14px;
+    height: 100%;
+}
+
+.testimonialContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 14px;
+
+}
+
+.testimonialDesc {
+    max-width: 617px;
+    width: 100%;
+    text-align: center;
+}
+
+.NamePosition {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.position {
+    max-width: 158px;
+    width: 100%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.awardContent {
+    display: flex;
+    padding: 30px;
+    border-radius: 14px;
+
+}
+
+.customSwiper {
+    padding-top: 40px;
+}
+
+.customSwiperTwo {
+    padding-top: 8px;
+}
+
+.slide-content {
+    border-radius: 12px !important;
+}
+
+.awardinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: var(--global-font);
+}
+
+.awardFor {
+    max-width: 180px;
+    width: 100%;
+    font-size: 32.36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: right;
+}
+
+.awardName {
+    max-width: 160px;
+    width: 100%;
+    font-size: 32.36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+}
+
+
+.impactButtonWrap {
+    width: 100%;
+    text-align: center;
+    padding-top: 72px;
+}
+
+.impactContent{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px;
+    height: 100%;
+}
+.impactHeading{
+    max-width: 260px;
+    width: 100%;
+    font-size: 32.36px;
+font-style: normal;
+font-weight: 800;
+line-height: 36px;
+}
+.percent {
+    font-size: 84.72px;
+font-style: normal;
+font-weight: 900;
+line-height: 62.5px;
+}
+.impactDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.customSwiper {
+    cursor: url('/assets/swiper-arrow.png'), auto;
+}
+.customSwiper:hover {
+    cursor: url('/assets/swiper-arrow.png');
+}
+
+  
+
+
+.bgwhite{
+background-color: white ;
+}
+.blackBg{
+    background-color: black ;
+}
+.textClrHome{
+    color:#082BC6;
+    border:1px solid white;
+}
+.textClrAbout{
+    color: #70FF70;
+}
+.textClrAbout svg path{
+    stroke: #70FF70 !important;
+}
+.textClrAbout:hover svg path{
+    stroke: #000!important;
+}
+.textClrWork{
+    color:#FF70B8;
+}
+.textClrWork svg path{
+    stroke:#FF70B8 !important;
+}
+.textClrService{
+    color: #A0A0A0;
+}
+.textClrService svg path{
+    stroke: #A0A0A0 !important;
+}
+.textClrService:hover svg path{
+    stroke: black !important;
+}
+.textClrwebDev{
+    color:#fff
+}
+.textClrwebDev svg path{
+    stroke:#fff
+}
+.textClrwebDes{
+    color:black;
+    border: 1px solid white;
+}
+.textClrwebDes svg path{
+    stroke:black
+}
+.textClrHome:hover{
+    color: white;
+    background: transparent;
+}
+.textClrwebDes:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.textClrwebDes:hover svg path{
+    stroke: white;
+}
+.textClrHome svg path{
+    stroke: #082BC6;
+}
+.textClrHome:hover svg path{
+    stroke: white;
+}
+.textClrcareer{
+    border:1px solid #000;
+    color: #000;
+    background: white;
+}
+.textClrcareer svg path{
+    stroke: #000;
+}
+.textClrcareer:hover{
+    color: white;
+    border:1px solid white;
+    background: transparent;
+
+}
+.textClrcareer:hover svg path{
+    stroke: white;
+}
+.textClrWork:hover{
+    color: black;
+    background: transparent;
+}
+.textClrWork:hover svg path{
+   stroke: #000 !important;
+}
+.headerButton svg path{
+stroke:  white;
+}
+/* -----------------dropdown------------- */
+.dropdown {
+    position: relative;
+    display: none;
+  }
+ 
+  .dropdownButton {
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    opacity: 1;
+    transition: transform 0.3s ease,opacity 0.3s ease;
+    position: relative;
+    z-index: 10000;
+
+  }
+  
+  .dropdownContent {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    transform: translateX(-100%);
+    background-color: var(--color-8);
+    color: white;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    height: 100vh;
+    transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+  }
+  .dropdownLogo{
+    padding: 18px 20px;
+  }
+  .dropdownContent ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .dropdownContent li {
+    text-align: center;
+    
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdownContent li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .dropdownContent li a:hover {
+    color: #ccc;
+  }
+  .dropdownCtaBtn{
+   display: flex;
+   justify-content: center;
+   padding-top: 40px;
+
+  }
+.mobilelinkContainer{
+    width: 100%;
+}  
+
+.iconTransition {
+    transition: transform 0.3s ease; /* Smooth transition for the icon */
+  }
+  
+  /* You can rotate the SVG or adjust any properties to achieve the smooth effect */
+  .iconTransition path {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* When isOpen is true, rotate or modify the icon */
+  .dropdownButton[aria-expanded="true"] .iconTransition path {
+    transform: rotate(45deg); /* Rotate for cross icon */
+  }
+
+
+  @media(max-width:768px){
+    .dropdown {
+        display: block;
+      }
+      .showContent{
+        transform: translateX(0%);
+      }
+      .SuperHitCard:nth-child(even) {
+        margin-top: 0px;
+    }
+    .InsightCard img{
+        height: revert-layer;
+    }
+  }

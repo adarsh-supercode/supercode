@@ -1,0 +1,98 @@
+.mainPagebg{
+    /* background-color: var(--color-17); */
+}
+.Animationebg{
+    padding-top: 150px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+  .careersAnimationText {
+    padding: 10px;
+    font-size: 137px;
+    color: var(--color-18);
+    display: flex;
+    white-space: nowrap;
+  }
+  .careersAnimationText2 {
+    padding: 10px;
+    font-size: 137px;
+    white-space: nowrap;
+    color: var(--color-18);
+    position: absolute;
+    top: 40%;
+    z-index: -1;
+  }
+  .careersAnimationTextWrap{
+    position: absolute;
+    top: 17%;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 180px;
+  }
+  .careersAnimationTextWrap.careersAnimationTextWrapSecond{
+    top: calc(18% + 160px);
+  }
+  @media (max-width:768px){
+    .careersAnimationTextWrap.careersAnimationTextWrapSecond{
+      top: calc(9% + 160px);
+    }
+    .careersAnimationTextWrap{
+      top: 0;
+    }
+  }
+  .careersAnimationTextWrap2{
+    position: absolute;
+    top: 48%;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 160px;
+  }
+  .TextContent{
+    display: flex;
+  }
+.careersAnimationText{
+  font-size: 137.08px;
+font-style: normal;
+font-weight: 200;
+line-height: 65px;
+letter-spacing: -5px;
+display: inline-block;
+white-space: nowrap;
+margin-right: 20px;
+color: var(--color-18);
+}
+.careersAnimationText2{
+  font-size: 137.08px;
+font-style: normal;
+font-weight: 200;
+line-height: 65px;
+letter-spacing: -5px;
+display: inline-block;
+white-space: nowrap;
+margin-right: 20px;
+color: var(--color-18);
+}
+.careersAnimationTextLogo{
+  padding: 0 80px;
+}
+
+.loadModelCube{
+  height: 550px;
+  width: 100%;
+  position: relative;
+  z-index: 3,
+}
+
+@media(max-width:768px){
+  .loadModelCube{
+    height: 400px;
+   
+  }
+}

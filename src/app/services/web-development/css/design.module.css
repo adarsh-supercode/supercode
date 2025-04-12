@@ -1,0 +1,33 @@
+.WebdesignSec{
+    padding-top: 180px;
+}
+.marqueeLinkWrap{
+    padding-right: 70px;
+}
+.MarqueeLInkHeading{
+    padding-bottom: 56px;
+}
+.MarqueeLInkSection{
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.marqueeLink{
+display: flex;
+align-items: center;
+justify-content: center;
+gap :70px;
+padding: 45px 0;
+font-size: 137.08px;
+font-style: normal;
+font-weight: 200;
+line-height: 80px; /* 58.36% */
+letter-spacing: -3px;
+text-transform: uppercase;
+}
+
+@media(max-width:768px){
+    .WebdesignSec{
+        padding-top: 110px;
+    }
+}

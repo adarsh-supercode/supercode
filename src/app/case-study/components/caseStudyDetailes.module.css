@@ -1,0 +1,211 @@
+
+.CaseStudySection{
+  /* background-color: #9FEEFF; */
+  transition: background-color 0.4s ease;
+ 
+}
+  .caseStudyContent {
+    color: var(--color-1);
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding-top:50px;
+  }
+  
+  .caseStudyContent > h2 {
+    color: var(--color-1);
+    font-size: 52.36px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; 
+letter-spacing: -1px;
+padding: 72px 0 32px;
+
+  }
+  
+  .caseStudyContent > ol li {
+    color: var(--color-1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 5px 0;
+  }
+  .caseStudyContent > ul li {
+    color: var(--color-1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 5px 0;
+  }
+  .casestudyClientname{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100px;
+    text-transform: uppercase;
+  }
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h1{
+    color: var(--color-1);
+    font-size: 52.36px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: -1px;
+max-width:  1171px;
+width: 100%;
+  }
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h2{
+    color: var(--color-1);
+    font-size: 52.36px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: -1px;
+padding: 40px 0 32px;
+  }
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h4{
+    font-size: 84.72px;
+    font-style: normal;
+    line-height: 62.5px; 
+    padding:60px 0 20px;
+  }
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h5{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  } 
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h5 strong{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+ 
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h1{
+    font-size: 84.72px;
+font-style: normal;
+font-weight: 400;
+line-height: 95px; /* 112.134% */
+letter-spacing: -2px;
+  }
+  .caseStudyContent > p  , .caseStudyContent > :global(.wp-bootstrap-blocks-container) p{
+    color: var(--color-1);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    opacity: 0.8;
+    padding-bottom: 20px;
+  }
+  .caseStudyContent > i {
+    color: var(--color-1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    opacity: 0.8;
+  }
+  
+
+  
+  .caseStudyContent :global(.wp-block-image) img {
+    width: 100%;
+    height: auto;
+    padding:  100px 0 62px;
+  }
+.singlePostsideNav{
+    position: relative;
+    z-index: 2;
+}
+ 
+.CaseStudyContentWrap{
+  padding-top: 180px;
+}
+.caseStudyContent :global(.wp-block-button){
+  padding-top: 100px;
+ 
+}
+.caseStudyContent :global(.wp-block-button) a{
+  padding: 16px 30px;
+  border: 1px solid;
+  border-radius:50px ;
+  position: relative;
+  z-index: 2;
+  cursor: none;
+
+}
+.caseStudyContent :global(.wp-block-button) a::before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-image: url('/assets/arrow.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px; 
+}
+.caseStudyContent :global(.wp-block-button) a:hover{
+  background-color: black;
+  color: white;
+  cursor:url('/assets/circleCursorwhite.png')  !important;
+  border: none;
+}
+.caseStudyContent :global(.wp-block-button) a:hover::before {
+  background-image: url('/assets/whiteArrow.png') !important; 
+}
+.caseStudyContent :global(.swiper) img{
+width: 100%;
+height:600px;
+}
+.relatedCaseStudy{
+  display: flex;
+  gap: 24px;
+}
+.relatedPostImg{
+  max-width: 411px;
+  width: 100%;
+}
+.relatedCaseStudyWrap{
+  padding-top: 200px;
+}
+.relatedCaseStudy{
+  padding: 90px 0 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.swiper.swiper-wrapper .swiper-slide img{
+width: 100% !important;
+height: 100% !important;
+}
+.custom-swiper-class .swiper-wrapper .swiper-slide img{
+  width: 100% !important;
+  height: 100%;
+}
+@media(max-width:768px){
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h1{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .caseStudyContent > p  , .caseStudyContent > :global(.wp-bootstrap-blocks-container) p{
+    padding-bottom:12px;
+  }
+  .caseStudyContent > :global(.wp-bootstrap-blocks-container) h4{
+    padding:0px 0 20px;
+  }
+
+  .caseStudyContent :global(.wp-block-image) img {
+   
+    padding:  50px 0 32px;
+  }
+  .relatedCaseStudyWrap{
+padding: 60px 20px 0;
+  }
+  .relatedCaseStudy{
+    flex-direction: column;
+  padding-bottom: 0;
+  }
+}

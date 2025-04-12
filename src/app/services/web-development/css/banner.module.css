@@ -1,0 +1,88 @@
+.bannerSection {
+    background-color: var(--color-19);
+    position: relative;
+    padding-bottom: 70px;
+    height: 700px;
+}
+
+.bannerSvgWrap {
+    height: 700px;
+}
+
+.bannerSvg {
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.bannerSectionWrap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.bannerSectionTitle {
+    padding-top: 186px;
+}
+
+.bannerSectionTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 4;
+    padding-left: 75px;
+}
+
+.bannerHeading {
+    max-width: 860px;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+.bannerHeading span {
+    font-style: italic;
+}
+
+.bannerDescription {
+    max-width: 1026px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 75px;
+    z-index: 4;
+}
+
+.BannerSectionLink {
+    position: absolute;
+    right: 10%;
+    bottom: 6%;
+    padding: 10px;
+    max-width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@media(max-width:768px){
+    .bannerSectionTitle{
+        padding: 120px 0 0 30px;
+    }
+    .bannerDescription{
+        padding-left: 30px;
+    }
+    .bannerSection{
+        height: 700px;
+    }
+}

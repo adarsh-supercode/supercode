@@ -1,0 +1,25 @@
+
+.joinContent{
+    display: flex;
+    gap: 200px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+}
+.JoinSectionDesc{
+    max-width: 519px;
+    width: 100%;
+}
+.joinTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+@media(max-width:768px){
+    .joinContent{
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+}

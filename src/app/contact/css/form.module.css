@@ -1,0 +1,140 @@
+.ContactFormSec{
+    padding-top: 170px;
+}
+
+.FormWrap{
+    display: flex;
+    gap: 137px;
+    position: relative;
+    z-index: 2;
+}
+.emailText a{
+    text-decoration: underline;
+    /* cursor: pointer; */
+}
+.OfficeAddress{
+    padding-top: 104px;
+}
+.address{
+    max-width: 300px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+/* ContactFormSec */
+.formSection{
+    width: 100%;
+    padding-right: 100px;
+}
+.ContactFormItems{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 56px;
+    column-gap: 24px;
+}
+.ContactFormItems input{
+    border: none;
+}
+.ContactFormItems input[type="text"],
+.ContactFormItems input[type="email"],
+.ContactFormItems input[type="tel"]{
+    border: 1px solid black;
+    height: 72px;
+    padding: 24px;
+    width: 100%;
+    color: rgba(174, 174, 174, 0.67);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: var(--global-font);
+    /* cursor: pointer; */
+    background:none;
+}
+.ContactFormItems textarea{
+    border: 1px solid black;
+    height: 160px;
+    padding: 24px;
+    width: 100%;
+    color: rgba(174, 174, 174, 0.67) ;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: var(--global-font);
+    /* cursor: pointer; */
+    background: none;
+
+}
+.ContactFormTextarea{
+    grid-column: 1 / span 2;
+    width: 100%;
+}
+.ActionContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
+}
+.ContactFormRadios{
+    display: flex;
+    gap: 40px;
+}
+.FormRadioslabel{
+    display: flex;
+    gap: 10px;
+}
+.FormRadioslabel input[type="radio"]{
+    width:18px;
+    accent-color:black !important;
+    background: none;
+}
+.Mapbtn{
+    padding-top: 140px;
+}
+
+.ContactFormItems input:focus,
+.ContactFormItems textarea:focus {
+  outline: none; /* Removes the default blue outline */
+  border: 1px solid #ccc; /* Optional: Customize border color */
+}
+.errorMessage{
+    color: red;
+}
+.SubmitMessage{
+    position: absolute;
+    bottom: 80px;
+    right: 114px;
+}
+@media(max-width:1200px){
+    .formSection{
+        padding-right: 0;
+    }
+}
+@media(max-width:768px){
+    .ContactFormSec{
+        padding-top: 78px;
+    }
+    .FormWrap{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .ContactFormItems{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .formSection{
+        width: 100%;
+        padding-right: 0;
+    }
+    .ActionContainer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        padding-top: 22px;
+    }
+    .Mapbtn{
+        padding-top: 60px;
+    }
+}

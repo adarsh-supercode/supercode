@@ -1,0 +1,130 @@
+.conatiner {
+  position: relative;
+  margin-top: 120px;
+  z-index: 2;
+  background: transparent;
+}
+.ImpactBannerWrap{
+  background-color: #f5f5f5;
+}
+.bannerContainer {
+.bannerTag{
+  margin-left: 20px;
+}
+  .BannerTitle h1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+.masonryContainer {
+  margin: 100px 0;
+}
+
+.cardContainer {
+  padding: 30px;
+  border-radius: 15px;
+
+}
+
+.testimonialCard {
+  padding: 72px 33px 48px 33px;
+  
+
+  .description {
+    margin-bottom: 26px;
+  }
+
+  .authorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 200px;
+    gap: 0.5rem;
+    margin-bottom: 48px;
+  }
+}
+
+.staticsCard {
+  padding: 56px 33px 50px 33px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.awardCard1 {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 47px;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      max-height: 240px;
+      object-fit: contain;
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    max-width: 50%;
+    text-align: end;
+    gap: 2rem;
+
+    .subTitle {
+      display: flex;
+      width: 100%;
+      height: auto;
+      max-width: 160px;
+
+    }
+
+  }
+}
+
+.awardCard2 {
+  padding: 64px 32px;
+  .title{
+    max-width: 285px;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    .image {
+      display: flex;
+      object-fit: contain;
+      width: 35%;
+      height: 100%;
+      max-height: 100px;
+    }
+  }
+}
+
+.cardButton {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  height: fit-content;
+  border: 1px solid currentColor;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin-block: auto;
+}

@@ -1,0 +1,105 @@
+.BannerSection {
+    height: 1162px;
+    position: absolute;
+    pointer-events: none;
+}
+.animationLogo {
+    position: absolute !important;
+   /* width: 90%  !important; */
+   height: 1100px;
+   width: 100%;
+   /* z-index: 2; */
+}
+.BannerSectionWrap {
+    display: flex;
+    padding-top: 280px;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.MainHeading {
+    max-width: 1105px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.MainHeading span {
+    font-style: italic;
+
+}
+
+.bannerDescription {
+    max-width: 737px;
+    width: 100%;
+    padding-top: 40px;
+}
+.animationBannerLogo{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+@media(min-width:1440px) and (max-width:1720px) {
+
+    /* .animationLogoCanvas{
+        top: 45% !important;
+    } */
+}
+
+
+@media(max-width:1440px) {
+    .animationLogo {
+        position: absolute !important;
+       width: 90%;
+    }
+    /* .animationLogoCanvas{
+        top: 40%  !important;
+    } */
+}
+
+@media(max-width:768px) {
+    .BannerSection{
+        top: 100px;
+    }
+    .BannerSectionWrap{
+        flex-direction: column;
+        
+        align-items: flex-start;
+    }
+    .animationLogo {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .MainHeading{
+        max-width: 350px;
+    }
+    .bannerDescription p{
+        max-width: 359px;
+    }
+}
+@media(max-width:475px){
+   .MainHeading{
+    pointer-events: all;
+   }
+   .bannerDescription{
+    pointer-events: all;
+   }
+}
+@media(max-width:320px){
+    .animationLogo {
+        left: -64px;
+    }
+}
+.animationLogoCanvas{
+    background-color: var(--color-7);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
